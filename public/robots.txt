@@ -1,0 +1,6 @@
+# Permitir a todos los bots rastrear todo el sitio
+User-agent: *
+Disallow:
+
+# Indicar la ubicación del sitemap para facilitar la indexación
+Sitemap: https://gatitosworld.com/sitemap.xml
