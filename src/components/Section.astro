@@ -1,0 +1,14 @@
+---
+interface Props {
+  class?: string;
+  defaultClass: "on" | "off";
+}
+
+const { class: addClass, defaultClass } = Astro.props;
+---
+
+<section
+  class={`${defaultClass === "on" ? "max-w-6xl mx-auto my-0 px-4 lg:px-0" : ""} ${addClass}`}
+>
+  <slot />
+</section>

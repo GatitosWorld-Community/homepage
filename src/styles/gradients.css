@@ -1,0 +1,66 @@
+.radial-gradient-container {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+}
+
+.circle-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle 200px at 70% 40%, #114d92, transparent);
+  opacity: 0.7;
+}
+
+.circle-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle 200px at 80% 40%, #118c92, transparent);
+  opacity: 0.7;
+}
+
+.circle-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle 200px at 75% 50%, #851192, transparent);
+  opacity: 0.7;
+}
+
+.circle-4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle 150px at 25% 65%, #114d92, transparent);
+  opacity: 0.7;
+}
+
+.circle-5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle 200px at 39% 77%, #118c92, transparent);
+  opacity: 0.7;
+}
+
+.circle-6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle 100px at 15% 65%, #851192, transparent);
+  opacity: 0.7;
+}

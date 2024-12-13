@@ -1,0 +1,35 @@
+---
+import Badge from "../Badge.astro";
+---
+
+<header
+  class="fixed z-10 items-center justify-around hidden w-full p-2 bg-black/50 md:flex border-b-transparent md:px-0 md:py-4 backdrop-blur-lg"
+>
+  <div class="flex items-center gap-10">
+    <div>
+      <h2
+        class="text-3xl font-bold text-transparent bg-gradient-to-l from-cyan-500 to-white to-60% bg-clip-text"
+      >
+        GW
+      </h2>
+    </div>
+    <nav>
+      <ul class="flex items-center gap-5">
+        <li>
+          <a href="/" class="transition-colors hover:text-cyan-500">Inicio</a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/yxsifdev/gw-homepage/issues"
+            target="_blank"
+            class="transition-colors hover:text-cyan-500">Bugs</a
+          >
+        </li>
+        <!-- <li>
+          <a href="" class="transition-colors hover:text-cyan-500">Otros</a>
+        </li> -->
+      </ul>
+    </nav>
+  </div>
+  <Badge>v0.1.0 ✨</Badge>
+</header>
