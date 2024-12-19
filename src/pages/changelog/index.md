@@ -9,30 +9,7 @@ Consulta aquí los últimos cambios, mejoras y actualizaciones realizadas en nue
 
 <hr class="border-zinc-700 my-7"/>
 
-## v0.2.3 <span class="badge">Latest</span>
-
-<div class="v-content">
-
-**Actualizado:** 21 de diciembre de 2024.
-
-- Corrección de errores en la funcionalidad de ...
-- Mejoras generales en el rendimiento del sistema.
-- Implementación de un nuevo botón modal para ...
-
-</div>
-
-## v0.2.1
-
-<div class="v-content">
-
-**Actualizado:** 20 de diciembre de 2024.
-
-- Corrección de errores en ...
-- Mejoras en la compatibilidad responsiva para dispositivos móviles.
-
-</div>
-
-## v0.2.0
+## v0.2.0 <span class="badge">Latest</span>
 
 <div class="v-content">
 
