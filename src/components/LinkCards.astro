@@ -1,0 +1,26 @@
+---
+import { links } from "@/consts/links";
+import Section from "./Section.astro";
+---
+
+<Section defaultClass="on">
+  <div
+    class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+  >
+    {
+      links.map(({ Icon, label, link, content, colorClass, iconClass }) => (
+        <a
+          href={link}
+          target="_blank"
+          class={`flex items-center gap-2 border rounded-lg p-3 hover:scale-105 transition-transform ${colorClass}`}
+        >
+          <Icon class={iconClass} />
+          <div>
+            <h3 class="text-lg font-bold text-zinc-100">{label}</h3>
+            <p class="text-sm font-medium text-zinc-400">{content}</p>
+          </div>
+        </a>
+      ))
+    }
+  </div>
+</Section>
