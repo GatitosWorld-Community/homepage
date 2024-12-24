@@ -1,0 +1,235 @@
+---
+interface Props {
+  frontmatter: any;
+}
+
+// Supports weights 100-900
+import "@fontsource-variable/onest";
+import Header from "@/components/ui/Header.astro";
+import { ClientRouter } from "astro:transitions";
+
+const { frontmatter } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Página web oficial de GatitosWorld. El servidor amante de los gatos, y de Capitán Gato."
+      lang="es"
+    />
+    <meta
+      name="keywords"
+      content="gatitos, gatitosworld, gw, capitangato, capitán, gato, capitángato, discord, servidor, server"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="copyright" content="© 2024" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{frontmatter.title}</title>
+    <ClientRouter />
+  </head>
+  <body>
+    <Header />
+    <main class="max-w-6xl mx-auto my-0 px-4 lg:px-0 pt-24">
+      <article>
+        <slot />
+      </article>
+    </main>
+  </body>
+</html>
+<style is:global>
+  html {
+    font-family:
+      "Onest Variable",
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Open Sans",
+      "Helvetica Neue",
+      sans-serif;
+    background-color: #000000;
+    color-scheme: dark;
+    overflow-x: hidden;
+  }
+
+  article .v-content {
+    margin: 0 0 20px 0;
+  }
+
+  .v-content ul {
+    list-style: circle;
+    list-style-position: inside;
+  }
+
+  .v-content ul li {
+    color: #d4d4d8;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.006em;
+  }
+
+  article #links {
+    display: flex;
+    gap: 16px;
+  }
+
+  article a {
+    color: #3b82f6;
+  }
+
+  article #links a {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    color: #6389dc;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  article #links a:hover {
+    color: rgb(78, 80, 86);
+  }
+
+  article #links a svg {
+    height: 1em;
+    margin-left: 8px;
+  }
+
+  article #links a.button {
+    color: white;
+    background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
+    box-shadow:
+      inset 0 0 0 1px rgba(255, 255, 255, 0.12),
+      inset 0 -2px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+  }
+
+  article #links a.button:hover {
+    color: rgb(230, 230, 230);
+    box-shadow: none;
+  }
+
+  article pre {
+    font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo,
+      Consolas, "DejaVu Sans Mono", monospace;
+    font-size: 17px;
+    margin: 0;
+    border-radius: 5px;
+  }
+
+  article h1 {
+    font-size: 25px;
+    margin: 0.25em 0;
+    /* color: #d4d4d8; */
+    font-weight: 600;
+  }
+
+  article h2 {
+    margin: 0.25em 0;
+    color: #06b6d4;
+    font-size: 23px;
+    font-weight: 600;
+  }
+
+  article h3 {
+    margin: 0.25em 0;
+    font-weight: normal;
+    font-size: 17px;
+  }
+
+  article h4 {
+    margin: 0.25em 0;
+    font-weight: normal;
+    font-size: 15px;
+  }
+
+  article h2,
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  article .badge {
+    padding: 1px 5px;
+    border-radius: 5px;
+    background: #0677d46f;
+    color: #fff;
+    font-size: 14px;
+    border: 1px solid #0677d4;
+  }
+
+  article p {
+    color: #d4d4d8bd;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.006em;
+    margin: 0;
+  }
+
+  article code {
+    display: inline-block;
+    border: 1px solid transparent;
+    padding: 6px 8px;
+  }
+
+  article .box {
+    padding: 16px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 16px;
+    border: 1px solid white;
+  }
+
+  @media screen and (max-width: 768px) {
+    article #links {
+      flex-wrap: wrap;
+    }
+
+    article #links a.button {
+      padding: 14px 18px;
+    }
+
+    article h1 {
+      line-height: 1.5;
+    }
+  }
+
+  @keyframes bg-gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  article ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background: #000000;
+  }
+
+  article ::-webkit-scrollbar-thumb {
+    background-color: #27272a;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    background: #000000;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #06b6d4;
+  }
+</style>
