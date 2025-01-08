@@ -1,0 +1,32 @@
+---
+import Section from "../../Section.astro";
+import RulesBox from "./RulesBox.astro";
+import RulesSection from "./RulesSection.astro";
+import RulesSubSection from "./RulesSubSection.astro";
+import Rule from "./Rule.astro"
+---
+
+<Section defaultClass="on" class="space-y-4">
+    <RulesBox>
+        <RulesSection
+            title="Preámbulo"
+            description="El preámbulo en una normativa establece los objetivos e ideales por los que rige la creación y actualización de esta. Son nuestros principios, reflejados en este documento. También es común especificar datos relevantes para comprender el documento."
+        >
+            <Rule>
+                En este documento se recogen los términos y condiciones por los que se regula el acceso a los servicios que la comunidad de GatitosWorld ofrece en la plataforma de Discord, propiedad de Discord Inc.
+                <br><br>
+                Cuando se habla de nosotros, nos referimos al conjunto de administradores de la comunidad.<br>Cuando se habla de usted o ustedes, nos referimos al usuario individual o colectivo de usuarios que están leyendo este documento.
+                <br><br>
+                La interacción con la comunidad se sobreentiende como la aceptación de estos términos y su compromiso a cumplirlos, así como el conocimiento de que en caso contrario, se aplicarán sobre el usuario infractor las medidas correctoras necesarias.
+            </Rule>
+        </RulesSection>
+        <RulesSection
+            title="Legal"
+            description="Reservamos este espacio para aclarar a nuestros usuarios las leyes bajo las que nos regimos, y garantizar el correcto cumplimiento de sus derechos en cuanto a tratamiento de datos se refiere."
+        >
+            <Rule>
+                <b>Protección de datos</b><br><br>En GatitosWorld nos preocupamos por el cumplimiento de las vigentes normativas en materia de protección de datos y seguridad. Garantizamos una transparencia absoluta tratando a cada usuario por un código identificador único no vinculado de forma directa a datos personales, confidenciales o identificativos.<br><br>Este servidor sigue las leyes LOPD y RGPD vigentes en España y la Unión Europea. Estas leyes son las consideradas actualmente como más estrictas y restrictivas del mundo, por lo que nos sentimos orgullosos de poder decir que nos hemos adaptado con gran facilidad al resto de legislaciones internacionales.<br><br>Almacenamos la información exclusivamente necesaria para poder mantener un registro de actitud y comportamiento en el servidor, junto a las pruebas que acompañen a cualquiera de las sanciones y/o advertencias.<br><br>Cabe destacar que cualquier usuario puede solicitar la eliminación de sus datos, no obstante, por razones de calidad y seguridad, esta acción conllevará consigo un veto de acceso permanente a la comunidad al privar al equipo de moderación de la capacidad para poder almacenar pruebas.<br><br>Como usuario, también puede solicitar la información recopilada sobre su persona. Es de suma importancia comprender que aquellos elementos en los que intervengan terceros no podrán ser mostrados. Por ejemplo, si hablamos de una grabación de un canal de voz, no se podrá proporcionar si otros usuarios hablan durante la grabación, con el objetivo de proteger su privacidad.
+            </Rule>
+        </RulesSection>
+    </RulesBox>
+</Section>

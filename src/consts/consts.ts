@@ -12,6 +12,59 @@ interface CardCommunity {
   color: string;
 }
 
+interface CardGuide {
+  Icon: any;
+  label: string;
+  content: string;
+  color: string;
+  url: string;
+}
+
+export const cardsGuide: CardGuide[] = [
+  {
+    Icon: Logs,
+    label: "Reglas",
+    color: "emerald",
+    content: "Descubre las reglas que rigen nuestra comunidad.",
+    url: "/guide/rules"
+  },
+  {
+    Icon: Logs,
+    label: "Canales",
+    color: "purple",
+    content: "Nuestra lista completa de canales, de texto y voz, y sus funciones.",
+    url: "/guide/channels"
+  },
+  {
+    Icon: Logs,
+    label: "Mecánicas",
+    color: "purple",
+    content: "¿Sabías que nuestro servidor tiene sistemas únicos en la plataforma?",
+    url: "/guide/features"
+  },
+  {
+    Icon: Logs,
+    label: "Niveles",
+    color: "cyan",
+    content: "¿Quieres saber cómo recompensamos a nuestros usuarios más activos?",
+    url: "/guide/levels"
+  },
+  {
+    Icon: Logs,
+    label: "VIP",
+    color: "yellow",
+    content: "Nuestros rangos VIP, accesibles por todos. Incluso sin pagar.",
+    url: "/guide/vip"
+  },
+  {
+    Icon: Logs,
+    label: "Moderación",
+    color: "cyan",
+    content: "Conoce el trabajo de nuestros voluntarios moderadores, que vigilan la comunidad.",
+    url: "/guide/mod"
+  }
+]
+
 export const cardsCommunity: CardCommunity[] = [
   {
     Icon: Battery,

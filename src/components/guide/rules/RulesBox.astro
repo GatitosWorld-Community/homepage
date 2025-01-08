@@ -1,0 +1,21 @@
+<div class="flex flex-col md:flex-row">
+  <!-- Columna izquierda (vacía) -->
+  <div class="hidden md:block md:w-[20%]"></div>
+
+  <!-- Columna central (contenido principal) -->
+  <div class="flex flex-col gap-5 p-4 overflow-y-auto md:w-[60%]" style="height: calc(100vh - 100px);">
+    <slot />
+  </div>
+
+  <!-- Columna derecha (índice/esquema de navegación) -->
+  <div class="hidden md:block md:w-[20%] p-4">
+    <!-- Contenido del índice -->
+    <nav>
+      <ul class="text-gray-400">
+        <li><a href="#seccion1" class="hover:text-white">Sección 1</a></li>
+        <li><a href="#seccion2" class="hover:text-white">Sección 2</a></li>
+        <li><a href="#seccion3" class="hover:text-white">Sección 3</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
