@@ -2,13 +2,14 @@
 interface Props {
   title: string;
   description?: string;
+  id?:string
 }
 
-const { title, description } = Astro.props;
+const { title, description, id } = Astro.props;
 ---
 
-<div>
-  <h1>{title}</h1>
+<div class="flex flex-col gap-2" id={id??title}>
+  <h1 class="text-2xl font-bold text-white mb-2 pt-8">{title}</h1>
   {description ? <p>{description}</p> : undefined}
   <slot />
 </div>
